@@ -7,7 +7,7 @@ let usuario = prompt("Ingrese su nombre de usuario: ")
 do{
     saldoInicial = saldo
     function saludarUsuario(){
-        return ("Hola " + usuario + " bienvenido a su cajero virtual su saldo inicial es de: " + saldoInicial );
+        return ("Hola " + usuario + " bienvenido a su cajero virtual su saldo inicial es de: " + saldoInicial + "$" );
     }
     alert(saludarUsuario())
 
@@ -17,7 +17,7 @@ do{
         case "1": 
             extra = parseFloat(prompt("Digite la cantidad de dinero a ingresar: "))
             saldo = saldoInicial + extra
-            alert("Dinero en cuenta: " + saldo)
+            alert("Dinero en cuenta: " + saldo + "$")
             break;
 
         case "2":
@@ -28,7 +28,7 @@ do{
             }
         else{
             saldo = saldoInicial - retiro
-            alert("Saldo en cuenta: " + saldo)
+            alert("Saldo en cuenta: " + saldo + "$")
         }
         break;
     case "3": 
